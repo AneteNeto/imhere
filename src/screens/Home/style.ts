@@ -4,7 +4,7 @@ export const styles=StyleSheet.create({
   container:{
     flex:1,
     backgroundColor:'#131016',
-    padding:24
+    padding:24,
   },
   eventName:{
     color:'#fff',
@@ -18,11 +18,18 @@ export const styles=StyleSheet.create({
     margin:8
   },
   input:{
+    flex:1,
     height:56,
     backgroundColor:'#1f1e25',
     color:'#fff',
     borderRadius:8,
     padding:8,
-    fontSize:16
+    fontSize:16,
+    marginRight:5
+  },
+
+  t:{
+      marginBottom:30,
+     flexDirection:'row'
   }
 });
