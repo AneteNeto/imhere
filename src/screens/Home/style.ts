@@ -27,9 +27,26 @@ export const styles=StyleSheet.create({
     fontSize:16,
     marginRight:5
   },
+  buttonText:{
+    color:"#fff",
+    fontSize:16
+  },
+  button:{
+    width:56,
+    height:56,
+    borderRadius:5,    
+    backgroundColor:'#31cf67',
+    alignItems:'center',
+    justifyContent:'center',
+  },
 
-  t:{
+  add:{
       marginBottom:30,
      flexDirection:'row'
+  },
+  listEmptyText:{
+    color:'#fff',
+    fontSize:16,
+    textAlign:'center'
   }
 });

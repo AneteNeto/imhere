@@ -1,15 +1,17 @@
-import { View, Text } from 'react-native';
-import { Button } from '../Button';
+import { View, Text , TouchableOpacity} from 'react-native';
 import { styles } from '../Participant/style';
 
 type props={
-  name:string
+  name:string,
+  onRemove:()=>void,
 }
-export function Participant({name}:props){
+export function Participant({name,onRemove}:props){
   return(
     <View style={styles.container}>
       <Text style={styles.nameParticipant}>{name}</Text>
-      <Button text='-'/>
+      <TouchableOpacity style={styles.button} onPress={onRemove}>
+            <Text style={styles.buttonText}> - </Text>
+        </TouchableOpacity>
     </View>
 
   );
